@@ -1,0 +1,140 @@
+.main__overview {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 60%;
+  height: 25rem;
+  gap: 1rem;
+}
+
+.main__overview-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  height: 100%;
+}
+
+.main__overview-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  border: 2px solid var(--gray);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.main__overview-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main__overview-card__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main__overview-card__title p {
+  font-size: 1.125rem;
+}
+
+.main__overview-card__title span {
+  /* font-size: 0.75rem; */
+  color: var(--secondary-color);
+}
+
+.main__overview-card__bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__overview-card__bottom span {
+  font-size: 1.5rem;
+}
+
+.main__overview-card__bottom button {
+  border: none;
+  background-color: transparent;
+}
+
+.main__overview-card__bottom button i {
+  border: none;
+  background-color: transparent;
+}
+
+.main__overview hr {
+  border: 1px solid var(--gray);
+}
+
+.main__overview-card__subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.main__overview-card__subtitle span {
+  font-size: 0.7rem;
+}
+
+.main__overview-card:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.main__overview-card:nth-child(1) {
+  background-color: var(--primary-color);
+}
+
+.main__overview-card:nth-child(2):hover {
+  background-color: var(--green);
+}
+
+.main__overview-card:nth-child(3):hover {
+  background-color: var(--yellow);
+}
+
+.main__overview-card:nth-child(4):hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.main__overview-card:hover .main__overview-card__subtitle span {
+  color: white;
+}
+
+.main__overview-card:nth-child(1) span,
+.main__overview-card:nth-child(1) p,
+.main__overview-card:nth-child(1) button {
+  color: white;
+}
+
+.main__overview-card:nth-child(2):hover .main__overview-card__subtitle span {
+  color: white;
+}
+
+.main__overview-card:nth-child(3):hover .main__overview-card__subtitle span {
+  color: white;
+}
+
+.main__overview-card:nth-child(4):hover .main__overview-card__subtitle span {
+  color: white;
+}
+.main__overview-card:nth-child(4):hover .main__overview-card__subtitle img {
+  background-color: white;
+}
+.main__overview-card:hover button {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main__overview-layout {
+    grid-template-columns: 1fr;
+  }
+}

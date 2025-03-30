@@ -1,0 +1,66 @@
+.recent__transactions {
+  display: flex;
+  flex-direction: column;
+  height: 73%;
+  justify-content: space-evenly;
+}
+
+.recent__transactions header {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.recent__transactions header button {
+  border: none;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.recent__transactions-content {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent__transactions-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 197, 197);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.recent__transactions-item {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.recent__transactions-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent__transactions-amount {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.recent__transactions-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.recent__transactions-status {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.9rem;
+}

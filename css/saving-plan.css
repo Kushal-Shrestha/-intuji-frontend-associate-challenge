@@ -1,0 +1,140 @@
+/* Saving Plan Section */
+.saving__plan {
+  background-color: white;
+  height: 74%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+  justify-content: space-between;
+}
+
+.saving__plan header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saving__plan header button {
+  border: none;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.saving-plan-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Saving Plan Item */
+.saving-plan__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.saving-plan__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saving-plan__item-header p {
+  font-size: 0.8rem;
+}
+
+.saving-plan__item-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.saving-plan__item-target {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+}
+
+.saving-plan__item-amount-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saving-plan__item-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.saving-plan__item-current {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.saving-plan__item-goal {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+}
+
+.saving-plan__item-percentage {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.saving-plan__item-progress {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #e6e6e6;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.saving-plan__item-progress-bar {
+  height: 100%;
+  border-radius: 1rem;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Colors for different items */
+.saving-plan__item:nth-child(1) .saving-plan__item-progress-bar {
+  background-color: var(--primary-color);
+}
+
+.saving-plan__item:nth-child(1) .saving-plan__item-percentage {
+  color: var(--primary-color);
+}
+
+.saving-plan__item:nth-child(2) .saving-plan__item-progress-bar {
+  background-color: #ffb800;
+}
+
+.saving-plan__item:nth-child(2) .saving-plan__item-percentage {
+  color: #ffb800;
+}
+
+.saving-plan__item:nth-child(3) .saving-plan__item-progress-bar {
+  background-color: #00c48c;
+}
+
+.saving-plan__item:nth-child(3) .saving-plan__item-percentage {
+  color: #00c48c;
+}
+
+/* Animation for progress bars */
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progress-width);
+  }
+}
+
+/* Make side-column properly handle the 65% height */
+.side-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

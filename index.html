@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <aside>
+      <nav class="sidebar">
         <div class="navbar">
           <div class="navbar__logo">
             <i data-lucide="image"></i>
@@ -65,10 +65,10 @@
             </li>
           </ul>
         </div>
-      </aside>
+      </nav>
 
-      <main>
-        <div class="header">
+      <div class="content-wrapper">
+        <header class="page-header">
           <input id="search" type="search" placeholder="Search Here..." />
 
           <div class="header__profile">
@@ -94,145 +94,250 @@
               </div>
             </div>
           </div>
-        </div>
+        </header>
 
-        <div class="main__overview">
-          <span class="plus-jakarta-sans-bold">Overview</span>
-          <div class="main__overview-layout">
-            <div class="main__overview-card">
-              <div class="main__overview-card__header">
-                <img
-                  src="/assets/icons/your-balance.png"
-                  alt="your-balance-icon"
-                />
-                <div class="main__overview-card__title">
-                  <p class="plus-jakarta-sans-semibold">Your Balance</p>
-                  <div class="main__overview-card__subtitle">
+        <div class="main-content">
+          <main class="main-column">
+            <section class="main__overview">
+              <h2 class="plus-jakarta-sans-bold">Overview</h2>
+              <div class="main__overview-layout">
+                <article class="main__overview-card">
+                  <div class="main__overview-card__header">
                     <img
-                      src="/assets/icons/your-balance-arrow.png"
-                      alt="your-balance-arrow"
+                      src="/assets/icons/your-balance.png"
+                      alt="your-balance-icon"
                     />
-                    <span class="plus-jakarta-sans-regular"
-                      >15% compared with last month</span
-                    >
+                    <div class="main__overview-card__title">
+                      <p class="plus-jakarta-sans-semibold">Your Balance</p>
+                      <div class="main__overview-card__subtitle">
+                        <img
+                          src="/assets/icons/your-balance-arrow.png"
+                          alt="your-balance-arrow"
+                        />
+                        <span class="plus-jakarta-sans-regular"
+                          >15% compared with last month</span
+                        >
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="main__overview-card__middle">
-                <hr />
-              </div>
-              <div class="main__overview-card__bottom">
-                <span class="plus-jakarta-sans-bold">$ 28,891.138</span>
-                <button><i data-lucide="arrow-right"></i></button>
-              </div>
-            </div>
-            <div class="main__overview-card">
-              <div class="main__overview-card__header">
-                <img src="/assets/icons/saving.png" alt="your-balance-icon" />
-                <div class="main__overview-card__title">
-                  <p class="plus-jakarta-sans-semibold">Saving</p>
-                  <div class="main__overview-card__subtitle">
+                  <div class="main__overview-card__middle">
+                    <hr />
+                  </div>
+                  <div class="main__overview-card__bottom">
+                    <span class="plus-jakarta-sans-bold">$ 28,891.138</span>
+                    <button><i data-lucide="arrow-right"></i></button>
+                  </div>
+                </article>
+                <article class="main__overview-card">
+                  <div class="main__overview-card__header">
                     <img
-                      src="/assets/icons/saving-arrow.png"
-                      alt="your-balance-arrow"
+                      src="/assets/icons/saving.png"
+                      alt="your-balance-icon"
                     />
-                    <span class="plus-jakarta-sans-regular"
-                      >10% compared with last month</span
-                    >
+                    <div class="main__overview-card__title">
+                      <p class="plus-jakarta-sans-semibold">Saving</p>
+                      <div class="main__overview-card__subtitle">
+                        <img
+                          src="/assets/icons/saving-arrow.png"
+                          alt="your-balance-arrow"
+                        />
+                        <span class="plus-jakarta-sans-regular"
+                          >10% compared with last month</span
+                        >
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="main__overview-card__middle">
-                <hr />
-              </div>
-              <div class="main__overview-card__bottom">
-                <span class="plus-jakarta-sans-bold">$ 1,050.44</span>
-                <button><i data-lucide="arrow-right"></i></button>
-              </div>
-            </div>
-            <div class="main__overview-card">
-              <div class="main__overview-card__header">
-                <img src="/assets/icons/expenses.png" alt="your-balance-icon" />
-                <div class="main__overview-card__title">
-                  <p class="plus-jakarta-sans-semibold">Expenses</p>
-                  <div class="main__overview-card__subtitle">
+                  <div class="main__overview-card__middle">
+                    <hr />
+                  </div>
+                  <div class="main__overview-card__bottom">
+                    <span class="plus-jakarta-sans-bold">$ 1,050.44</span>
+                    <button><i data-lucide="arrow-right"></i></button>
+                  </div>
+                </article>
+                <article class="main__overview-card">
+                  <div class="main__overview-card__header">
                     <img
-                      src="/assets/icons/expenses-arrow.png"
-                      alt="your-balance-arrow"
+                      src="/assets/icons/expenses.png"
+                      alt="your-balance-icon"
                     />
-                    <span class="plus-jakarta-sans-regular"
-                      >2% compared with last month</span
-                    >
+                    <div class="main__overview-card__title">
+                      <p class="plus-jakarta-sans-semibold">Expenses</p>
+                      <div class="main__overview-card__subtitle">
+                        <img
+                          src="/assets/icons/expenses-arrow.png"
+                          alt="your-balance-arrow"
+                        />
+                        <span class="plus-jakarta-sans-regular"
+                          >2% compared with last month</span
+                        >
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="main__overview-card__middle">
-                <hr />
-              </div>
-              <div class="main__overview-card__bottom">
-                <span class="plus-jakarta-sans-bold">$ 200.31</span>
-                <button><i data-lucide="arrow-right"></i></button>
-              </div>
-            </div>
-            <div class="main__overview-card">
-              <div class="main__overview-card__header">
-                <img src="/assets/icons/incomes.png" alt="your-balance-icon" />
-                <div class="main__overview-card__title">
-                  <p class="plus-jakarta-sans-semibold">Incomes</p>
-                  <div class="main__overview-card__subtitle">
+                  <div class="main__overview-card__middle">
+                    <hr />
+                  </div>
+                  <div class="main__overview-card__bottom">
+                    <span class="plus-jakarta-sans-bold">$ 200.31</span>
+                    <button><i data-lucide="arrow-right"></i></button>
+                  </div>
+                </article>
+                <article class="main__overview-card">
+                  <div class="main__overview-card__header">
                     <img
-                      src="/assets/icons/incomes-arrow.png"
-                      alt="your-balance-arrow"
+                      src="/assets/icons/incomes.png"
+                      alt="your-balance-icon"
                     />
-                    <span class="plus-jakarta-sans-regular"
-                      >8% compared with last month</span
-                    >
+                    <div class="main__overview-card__title">
+                      <p class="plus-jakarta-sans-semibold">Incomes</p>
+                      <div class="main__overview-card__subtitle">
+                        <img
+                          src="/assets/icons/incomes-arrow.png"
+                          alt="your-balance-arrow"
+                        />
+                        <span class="plus-jakarta-sans-regular"
+                          >8% compared with last month</span
+                        >
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div class="main__overview-card__middle">
+                    <hr />
+                  </div>
+                  <div class="main__overview-card__bottom">
+                    <span class="plus-jakarta-sans-bold">$ 21,121.0</span>
+                    <button><i data-lucide="arrow-right"></i></button>
+                  </div>
+                </article>
               </div>
-              <div class="main__overview-card__middle">
-                <hr />
-              </div>
-              <div class="main__overview-card__bottom">
-                <span class="plus-jakarta-sans-bold">$ 21,121.0</span>
-                <button><i data-lucide="arrow-right"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
+            </section>
 
-        <div class="main__analytics">
-          <div class="main__analytics-header">
-            <span class="plus-jakarta-sans-bold">Analytics</span>
-            <div class="main__analytics-legend">
-              <div class="legend-item">
-                <span class="legend-dot purple"></span>
-                <span class="plus-jakarta-sans-regular">Label1</span>
+            <section class="main__analytics">
+              <div class="main__analytics-header">
+                <h2 class="plus-jakarta-sans-bold">Analytics</h2>
+                <div class="main__analytics-legend">
+                  <div class="legend-item">
+                    <span class="legend-dot purple"></span>
+                    <span class="plus-jakarta-sans-regular">Label1</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-dot orange"></span>
+                    <span class="plus-jakarta-sans-regular">Label1</span>
+                  </div>
+                  <div class="main__analytics-timeframe">
+                    <select
+                      id="timeframeSelect"
+                      class="analytics-select plus-jakarta-sans-regular"
+                    >
+                      <option selected>Weekly</option>
+                      <option>Monthly</option>
+                      <option>Yearly</option>
+                    </select>
+                    <i data-lucide="chevron-down"></i>
+                  </div>
+                </div>
               </div>
-              <div class="legend-item">
-                <span class="legend-dot orange"></span>
-                <span class="plus-jakarta-sans-regular">Label1</span>
+              <div class="main__analytics-chart">
+                <canvas id="analyticsChart" width="800" height="300"></canvas>
               </div>
-              <div class="main__analytics-timeframe">
-                <select
-                  id="timeframeSelect"
-                  class="analytics-select plus-jakarta-sans-regular"
-                >
-                  <option selected>Weekly</option>
-                  <option>Monthly</option>
-                  <option>Yearly</option>
-                </select>
-                <i data-lucide="chevron-down"></i>
+            </section>
+          </main>
+
+          <aside class="side-column">
+            <section class="saving__plan">
+              <header>
+                <h2 class="plus-jakarta-sans-bold">Saving Plan</h2>
+                <button>See All</button>
+              </header>
+              <hr />
+              <div class="saving-plan-content">
+                <!-- Content will be dynamically generated by JavaScript -->
               </div>
-            </div>
-          </div>
-          <div class="main__analytics-chart">
-            <canvas id="analyticsChart" width="800" height="300"></canvas>
-          </div>
+            </section>
+
+            <section class="recent__transactions">
+              <header>
+                <h2 class="plus-jakarta-sans-bold">Recent Transactions</h2>
+                <button>See All</button>
+              </header>
+
+              <hr />
+
+              <div class="recent__transactions-content">
+                <div class="recent__transactions-item">
+                  <div class="recent__transactions-logo">
+                    <i data-lucide="image"></i>
+                  </div>
+                  <div class="recent__transactions-title">
+                    <p class="plus-jakarta-sans-semibold">Figma</p>
+                    <span class="plus-jakarta-sans-regular"
+                      >August 20, 2022</span
+                    >
+                  </div>
+                </div>
+                <div class="recent__transactions-payment">
+                  <span class="recent__transactions-amount">$100</span>
+                  <span class="recent__transactions-status">Completed</span>
+                </div>
+              </div>
+              <div class="recent__transactions-content">
+                <div class="recent__transactions-item">
+                  <div class="recent__transactions-logo">
+                    <i data-lucide="image"></i>
+                  </div>
+                  <div class="recent__transactions-title">
+                    <p class="plus-jakarta-sans-semibold">Youtube</p>
+                    <span class="plus-jakarta-sans-regular"
+                      >August 20, 2022</span
+                    >
+                  </div>
+                </div>
+                <div class="recent__transactions-payment">
+                  <span class="recent__transactions-amount">$120</span>
+                  <span class="recent__transactions-status">Completed</span>
+                </div>
+              </div>
+              <div class="recent__transactions-content">
+                <div class="recent__transactions-item">
+                  <div class="recent__transactions-logo">
+                    <i data-lucide="image"></i>
+                  </div>
+                  <div class="recent__transactions-title">
+                    <p class="plus-jakarta-sans-semibold">Spotify</p>
+                    <span class="plus-jakarta-sans-regular"
+                      >August 20, 2022</span
+                    >
+                  </div>
+                </div>
+                <div class="recent__transactions-payment">
+                  <span class="recent__transactions-amount">$15</span>
+                  <span class="recent__transactions-status">Completed</span>
+                </div>
+              </div>
+              <div class="recent__transactions-content">
+                <div class="recent__transactions-item">
+                  <div class="recent__transactions-logo">
+                    <i data-lucide="image"></i>
+                  </div>
+                  <div class="recent__transactions-title">
+                    <p class="plus-jakarta-sans-semibold">Freepik</p>
+                    <span class="plus-jakarta-sans-regular"
+                      >August 20, 2022</span
+                    >
+                  </div>
+                </div>
+                <div class="recent__transactions-payment">
+                  <span class="recent__transactions-amount">$300</span>
+                  <span class="recent__transactions-status">Completed</span>
+                </div>
+              </div>
+            </section>
+          </aside>
         </div>
-      </main>
+      </div>
     </div>
     <script src="script.js"></script>
     <script src="js/chart.js"></script>
+    <script src="js/saving-plan.js"></script>
   </body>
 </html>

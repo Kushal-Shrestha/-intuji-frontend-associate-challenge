@@ -4,8 +4,8 @@
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
-  width: 60%;
-  height: 25rem;
+  width: 100%;
+  height: 100%;
   gap: 1rem;
 }
 
@@ -22,9 +22,10 @@
   height: 100%;
   justify-content: space-around;
   border: 2px solid var(--gray);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
+  gap: 1rem;
 }
 
 .main__overview-card__header {
@@ -66,10 +67,6 @@
 .main__overview-card__bottom button i {
   border: none;
   background-color: transparent;
-}
-
-.main__overview hr {
-  border: 1px solid var(--gray);
 }
 
 .main__overview-card__subtitle {

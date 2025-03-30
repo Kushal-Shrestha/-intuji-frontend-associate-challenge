@@ -3,6 +3,8 @@
 @import url("/css/header.css");
 @import url("/css/main-overview.css");
 @import url("/css/chart.css");
+@import url("/css/saving-plan.css");
+@import url("/css/recent-transactions.css");
 
 * {
   margin: 0;
@@ -26,16 +28,107 @@ body {
   background-color: #f7f7fb;
 }
 
+/* .container {
+  display: flex;
+  height: 100vh;
+} */
+
 .container {
   display: flex;
+  height: 100vh;
+  width: 100%; /* Add this */
 }
 
-main {
+hr {
+  border: 1px solid var(--gray);
+}
+
+.sidebar {
+  background-color: white;
+  width: 20%;
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  width: 100%;
+  gap: 1rem;
+  overflow: auto;
+} */
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  width: 100%;
+  gap: 1rem;
+  overflow: auto;
+  min-height: 0; /* Add this to fix flexbox overflow issues */
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* .main-content {
+  display: flex;
+  gap: 2rem;
+  height: calc(100vh - 100px);
+  justify-content: space-between;
+} */
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+  /* Remove this line: height: calc(100vh - 100px); */
+  justify-content: space-between;
+}
+
+/* .main-column {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-left: 2rem;
-  width: 100%;
+  width: 60%;
+} */
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+  flex-grow: 1; /* Add this */
+}
+
+/* .side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35%;
+} */
+
+.side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35%;
+  flex-grow: 1; /* Add this */
+}
+
+.main__overview,
+.main__analytics,
+.saving__plan,
+.recent__transactions {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
 }
 
 .plus-jakarta-sans-semibold {
@@ -60,4 +153,46 @@ main {
   font-weight: 700;
   font-size: 20px;
   font-style: normal;
+}
+
+.main__overview-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  height: 100%;
+}
+
+.main__analytics {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__analytics-chart {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-column,
+  .side-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .main__overview-layout {
+    grid-template-columns: 1fr;
+  }
 }

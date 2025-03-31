@@ -26,7 +26,6 @@ input[type="search"] {
     padding-left 0.4s ease-in-out;
 }
 
-/* Animations used to shift the search icon to the right on focus */
 input[type="search"]:focus {
   background-position: calc(100% - 50px) center;
   padding-left: 1rem;

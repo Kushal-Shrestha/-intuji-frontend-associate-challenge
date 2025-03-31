@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -19,86 +22,87 @@
         <div class="navbar">
           <div class="navbar__header">
             <div class="navbar__logo">
-              <i data-lucide="image"></i>
+              <span class="material-icons-outlined">image</span>
             </div>
-            <button id="toggleSidebar" class="toggle-sidebar">
-              <i data-lucide="menu"></i>
-            </button>
+            <div class="navbar__item--active"></div>
           </div>
           <ul class="navbar__item plus-jakarta-sans-regular">
-            <li class="navbar__item--active">
-              <i data-lucide="layout-dashboard"></i>
+            <li>
+              <span class="material-icons-outlined">dashboard</span>
               <a href="#" class="plus-jakarta-sans-semibold nav-text"
                 >Dashboard</a
               >
             </li>
             <li>
-              <i data-lucide="calendar"></i>
+              <span class="material-icons-outlined">event</span>
               <span class="nav-text">Schedule</span>
             </li>
             <li>
-              <i data-lucide="mail"></i>
+              <span class="material-icons-outlined">mail</span>
               <span class="nav-text">Message</span>
             </li>
             <li>
-              <i data-lucide="bar-chart-2"></i>
+              <span class="material-icons-outlined">bar_chart</span>
               <span class="nav-text">Analytics</span>
             </li>
             <li>
-              <i data-lucide="users"></i>
+              <span class="material-icons-outlined">group</span>
               <span class="nav-text">Team</span>
             </li>
-
-            <hr class="navbar__divider" />
+            <hr />
             <li>
-              <i data-lucide="user"></i>
+              <span class="material-icons-outlined">person</span>
               <span class="nav-text">Profile</span>
             </li>
             <li>
-              <i data-lucide="bolt"></i>
+              <span class="material-icons-outlined">flash_on</span>
               <span class="nav-text">Settings</span>
             </li>
           </ul>
 
           <ul class="navbar__footer">
             <li>
-              <i data-lucide="help-circle"></i>
+              <span class="material-icons-outlined">help_outline</span>
               <span class="nav-text">Help</span>
             </li>
             <li>
-              <i data-lucide="log-out"></i>
+              <span class="material-icons-outlined">logout</span>
               <span class="nav-text">Logout</span>
             </li>
           </ul>
         </div>
       </nav>
 
+      <!-- Overlay for mobile sidebar -->
+      <div class="sidebar-overlay"></div>
+
       <div class="content-wrapper">
         <header class="page-header">
           <div class="mobile-nav-toggle">
             <button id="mobileToggle" class="mobile-toggle-btn">
-              <i data-lucide="menu"></i>
+              <span class="material-icons-outlined">menu</span>
             </button>
           </div>
+
           <input id="search" type="search" placeholder="Search Here..." />
 
           <div class="header__profile">
             <div class="header__notifications">
               <button class="header__notifications-btn">
-                <i data-lucide="bell"></i>
+                <span class="material-icons-outlined">notifications</span>
               </button>
               <button class="header__notifications-btn">
-                <i data-lucide="message-square-text"></i>
+                <span class="material-icons-outlined">chat</span>
               </button>
             </div>
 
             <div class="header__profile-user">
               <div class="header__profile-image">
-                <i data-lucide="image"></i>
+                <span class="material-icons-outlined">image</span>
               </div>
               <span>Mirie Kiritani</span>
               <button>
-                <i data-lucide="chevron-down"></i>
+                <span class="material-icons-outlined">arrow_drop_down</span>
               </button>
               <div class="dropdown-content">
                 <p>Logout</p>
@@ -136,22 +140,19 @@
                   </div>
                   <div class="main__overview-card__bottom">
                     <span class="plus-jakarta-sans-bold">$ 28,891.138</span>
-                    <button><i data-lucide="arrow-right"></i></button>
+                    <button>
+                      <span class="material-icons-outlined">arrow_forward</span>
+                    </button>
                   </div>
                 </article>
+
                 <article class="main__overview-card">
                   <div class="main__overview-card__header">
-                    <img
-                      src="/assets/icons/saving.png"
-                      alt="your-balance-icon"
-                    />
+                    <img src="/assets/icons/saving.png" alt="saving icon" />
                     <div class="main__overview-card__title">
                       <p class="plus-jakarta-sans-semibold">Saving</p>
                       <div class="main__overview-card__subtitle">
-                        <img
-                          src="/assets/icons/saving-arrow.png"
-                          alt="your-balance-arrow"
-                        />
+                        <img src="/assets/icons/saving-arrow.png" alt="arrow" />
                         <span class="plus-jakarta-sans-regular"
                           >10% compared with last month</span
                         >
@@ -163,21 +164,21 @@
                   </div>
                   <div class="main__overview-card__bottom">
                     <span class="plus-jakarta-sans-bold">$ 1,050.44</span>
-                    <button><i data-lucide="arrow-right"></i></button>
+                    <button>
+                      <span class="material-icons-outlined">arrow_forward</span>
+                    </button>
                   </div>
                 </article>
+
                 <article class="main__overview-card">
                   <div class="main__overview-card__header">
-                    <img
-                      src="/assets/icons/expenses.png"
-                      alt="your-balance-icon"
-                    />
+                    <img src="/assets/icons/expenses.png" alt="expenses icon" />
                     <div class="main__overview-card__title">
                       <p class="plus-jakarta-sans-semibold">Expenses</p>
                       <div class="main__overview-card__subtitle">
                         <img
                           src="/assets/icons/expenses-arrow.png"
-                          alt="your-balance-arrow"
+                          alt="arrow"
                         />
                         <span class="plus-jakarta-sans-regular"
                           >2% compared with last month</span
@@ -190,21 +191,21 @@
                   </div>
                   <div class="main__overview-card__bottom">
                     <span class="plus-jakarta-sans-bold">$ 200.31</span>
-                    <button><i data-lucide="arrow-right"></i></button>
+                    <button>
+                      <span class="material-icons-outlined">arrow_forward</span>
+                    </button>
                   </div>
                 </article>
+
                 <article class="main__overview-card">
                   <div class="main__overview-card__header">
-                    <img
-                      src="/assets/icons/incomes.png"
-                      alt="your-balance-icon"
-                    />
+                    <img src="/assets/icons/incomes.png" alt="incomes icon" />
                     <div class="main__overview-card__title">
                       <p class="plus-jakarta-sans-semibold">Incomes</p>
                       <div class="main__overview-card__subtitle">
                         <img
                           src="/assets/icons/incomes-arrow.png"
-                          alt="your-balance-arrow"
+                          alt="arrow"
                         />
                         <span class="plus-jakarta-sans-regular"
                           >8% compared with last month</span
@@ -217,7 +218,9 @@
                   </div>
                   <div class="main__overview-card__bottom">
                     <span class="plus-jakarta-sans-bold">$ 21,121.0</span>
-                    <button><i data-lucide="arrow-right"></i></button>
+                    <button>
+                      <span class="material-icons-outlined">arrow_forward</span>
+                    </button>
                   </div>
                 </article>
               </div>
@@ -244,7 +247,7 @@
                       <option>Monthly</option>
                       <option>Yearly</option>
                     </select>
-                    <i data-lucide="chevron-down"></i>
+                    <span class="material-icons-outlined">arrow_drop_down</span>
                   </div>
                 </div>
               </div>
@@ -262,7 +265,7 @@
               </header>
               <hr />
               <div class="saving-plan-content">
-                <!-- Content will be dynamically generated by JavaScript -->
+                <!-- Content dynamically generated by JavaScript -->
               </div>
             </section>
 
@@ -271,13 +274,11 @@
                 <h2 class="plus-jakarta-sans-bold">Recent Transactions</h2>
                 <button>See All</button>
               </header>
-
               <hr />
-
               <div class="recent__transactions-content">
                 <div class="recent__transactions-item">
                   <div class="recent__transactions-logo">
-                    <i data-lucide="image"></i>
+                    <span class="material-icons-outlined">image</span>
                   </div>
                   <div class="recent__transactions-title">
                     <p class="plus-jakarta-sans-semibold">Figma</p>
@@ -294,7 +295,7 @@
               <div class="recent__transactions-content">
                 <div class="recent__transactions-item">
                   <div class="recent__transactions-logo">
-                    <i data-lucide="image"></i>
+                    <span class="material-icons-outlined">image</span>
                   </div>
                   <div class="recent__transactions-title">
                     <p class="plus-jakarta-sans-semibold">Youtube</p>
@@ -311,7 +312,7 @@
               <div class="recent__transactions-content">
                 <div class="recent__transactions-item">
                   <div class="recent__transactions-logo">
-                    <i data-lucide="image"></i>
+                    <span class="material-icons-outlined">image</span>
                   </div>
                   <div class="recent__transactions-title">
                     <p class="plus-jakarta-sans-semibold">Spotify</p>
@@ -328,7 +329,7 @@
               <div class="recent__transactions-content">
                 <div class="recent__transactions-item">
                   <div class="recent__transactions-logo">
-                    <i data-lucide="image"></i>
+                    <span class="material-icons-outlined">image</span>
                   </div>
                   <div class="recent__transactions-title">
                     <p class="plus-jakarta-sans-semibold">Freepik</p>
@@ -347,6 +348,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/saving-plan.js"></script>

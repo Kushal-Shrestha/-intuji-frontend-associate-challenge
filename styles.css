@@ -37,23 +37,16 @@ body {
 
 hr {
   border: 1px solid var(--gray);
-}
-
-.sidebar {
-  background-color: white;
-  width: 20%;
-  height: 100vh;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
 }
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 250px;
   flex: 1;
   padding: 1.5rem;
-  width: 100%;
   gap: 1rem;
-  overflow: auto;
   min-height: 0;
 }
 
@@ -67,6 +60,7 @@ hr {
 .main-content {
   display: flex;
   gap: 2rem;
+  margin-top: 1rem;
   justify-content: space-between;
 }
 
@@ -75,14 +69,6 @@ hr {
   flex-direction: column;
   gap: 2rem;
   width: 60%;
-  flex-grow: 1;
-}
-
-.side-column {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 35%;
   flex-grow: 1;
 }
 
@@ -97,26 +83,20 @@ hr {
 
 .plus-jakarta-sans-semibold {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-size: 1rem;
-  font-style: normal;
 }
 
 .plus-jakarta-sans-regular {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-size: 1rem;
-  font-style: normal;
 }
 
 .plus-jakarta-sans-bold {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-size: 20px;
-  font-style: normal;
 }
 
 .main__overview-layout {
@@ -139,10 +119,15 @@ hr {
   .main-content {
     flex-direction: column;
   }
-
-  .main-column,
-  .side-column {
+  .main-column {
     width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    margin-left: 0 !important;
+    width: 100% !important;
   }
 }
 
@@ -150,13 +135,12 @@ hr {
   .container {
     flex-direction: column;
   }
-
-  .sidebar {
-    width: 100%;
-    min-height: auto;
-  }
-
   .main__overview-layout {
     grid-template-columns: 1fr;
   }
+}
+
+.material-icons-round {
+  font-size: 20px;
+  color: var(--secondary-color);
 }

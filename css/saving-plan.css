@@ -130,5 +130,14 @@
 .side-column {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  gap: 2rem;
+  width: 35%;
+  height: 56rem;
+  flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+  .side-column {
+    width: 100%;
+  }
 }

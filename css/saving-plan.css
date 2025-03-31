@@ -1,10 +1,8 @@
-/* Saving Plan Section */
 .saving__plan {
   background-color: white;
   height: 74%;
   display: flex;
   flex-direction: column;
-  /* align-items: stretch; */
   justify-content: space-between;
 }
 
@@ -28,7 +26,6 @@
   gap: 2rem;
 }
 
-/* Saving Plan Item */
 .saving-plan__item {
   display: flex;
   flex-direction: column;
@@ -97,7 +94,6 @@
   transition: width 1.5s ease-in-out;
 }
 
-/* Colors for different items */
 .saving-plan__item:nth-child(1) .saving-plan__item-progress-bar {
   background-color: var(--primary-color);
 }
@@ -115,14 +111,13 @@
 }
 
 .saving-plan__item:nth-child(3) .saving-plan__item-progress-bar {
-  background-color: #00c48c;
+  background-color: var(--green);
 }
 
 .saving-plan__item:nth-child(3) .saving-plan__item-percentage {
-  color: #00c48c;
+  color: var(--green);
 }
 
-/* Animation for progress bars */
 @keyframes progressAnimation {
   0% {
     width: 0;
@@ -132,7 +127,6 @@
   }
 }
 
-/* Make side-column properly handle the 65% height */
 .side-column {
   display: flex;
   flex-direction: column;

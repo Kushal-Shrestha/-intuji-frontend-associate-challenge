@@ -15,53 +15,59 @@
   </head>
   <body>
     <div class="container">
-      <nav class="sidebar">
+      <nav class="sidebar" id="sidebar">
         <div class="navbar">
-          <div class="navbar__logo">
-            <i data-lucide="image"></i>
+          <div class="navbar__header">
+            <div class="navbar__logo">
+              <i data-lucide="image"></i>
+            </div>
+            <button id="toggleSidebar" class="toggle-sidebar">
+              <i data-lucide="menu"></i>
+            </button>
           </div>
-
           <ul class="navbar__item plus-jakarta-sans-regular">
-            <li>
+            <li class="navbar__item--active">
               <i data-lucide="layout-dashboard"></i>
-              <span class="plus-jakarta-sans-semibold">Dashboard</span>
+              <a href="#" class="plus-jakarta-sans-semibold nav-text"
+                >Dashboard</a
+              >
             </li>
             <li>
               <i data-lucide="calendar"></i>
-              <span>Schedule</span>
+              <span class="nav-text">Schedule</span>
             </li>
             <li>
               <i data-lucide="mail"></i>
-              <span>Message</span>
+              <span class="nav-text">Message</span>
             </li>
             <li>
               <i data-lucide="bar-chart-2"></i>
-              <span>Analytics</span>
+              <span class="nav-text">Analytics</span>
             </li>
             <li>
               <i data-lucide="users"></i>
-              <span>Team</span>
+              <span class="nav-text">Team</span>
             </li>
 
             <hr class="navbar__divider" />
             <li>
               <i data-lucide="user"></i>
-              <span>Profile</span>
+              <span class="nav-text">Profile</span>
             </li>
             <li>
               <i data-lucide="bolt"></i>
-              <span>Settings</span>
+              <span class="nav-text">Settings</span>
             </li>
           </ul>
 
           <ul class="navbar__footer">
             <li>
-              <i data-lucide="user"></i>
-              <span>Help</span>
+              <i data-lucide="help-circle"></i>
+              <span class="nav-text">Help</span>
             </li>
             <li>
-              <i data-lucide="bolt"></i>
-              <span>Logout</span>
+              <i data-lucide="log-out"></i>
+              <span class="nav-text">Logout</span>
             </li>
           </ul>
         </div>
@@ -69,6 +75,11 @@
 
       <div class="content-wrapper">
         <header class="page-header">
+          <div class="mobile-nav-toggle">
+            <button id="mobileToggle" class="mobile-toggle-btn">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
           <input id="search" type="search" placeholder="Search Here..." />
 
           <div class="header__profile">
@@ -339,5 +350,6 @@
     <script src="script.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/saving-plan.js"></script>
+    <script src="js/side-bar.js"></script>
   </body>
 </html>

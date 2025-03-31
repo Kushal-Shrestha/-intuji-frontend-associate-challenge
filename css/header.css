@@ -222,7 +222,6 @@ input[type="search"]:focus {
 }
 
 @media (max-width: 1366px) {
-  /* Reduce icon sizes */
   .header__notifications-btn svg,
   .header__notifications-btn .material-icons-outlined {
     width: 18px;
@@ -264,5 +263,13 @@ input[type="search"]:focus {
   .header__profile {
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1387px) {
+  .header__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

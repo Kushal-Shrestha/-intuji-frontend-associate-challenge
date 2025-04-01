@@ -67,7 +67,9 @@ Mobile Screens (With Nav):
 ### Features and Notable Points
 
 1. Responsive Layout 
-   - Utilizes CSS media que
-2. 
+   - Utilizes CSS media queries to adapt desktop and mobile viewports
+2. Animations
+   - Analyt
+3. Semantic HTML
    - 
-3. Animations
+4. Animations

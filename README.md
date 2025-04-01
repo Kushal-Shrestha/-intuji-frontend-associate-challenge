@@ -1,3 +1,3 @@
 # -intuji-frontend-associate-challenge\
 \
-Helllo this is a sample
+This repository contains my submission for the Intuji Associate Soc

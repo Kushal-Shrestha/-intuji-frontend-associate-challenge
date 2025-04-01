@@ -57,3 +57,7 @@ Desktop Size:
 
 ![](https://holocron.so/uploads/c40291e0-image.png)
 
+Mobile Screens (With Nav):
+
+![](https://holocron.so/uploads/68e0ca7e-image.png)
+

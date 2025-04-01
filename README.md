@@ -6,11 +6,12 @@ This repository contains my submission for the Intuji Associate Software Enginee
 
 ## Table of Contents
 
-- Project Overview
-- Assignment Requirements
-- How to Run
-- Folder / File Structure
-- Screenshots
+- 
+  - [Project Overview](#project-overview)
+  - [Assignment Requirements](#assignment-requirements)
+  - [How to Run](#how-to-run)
+  - [Folder / File Structure](#folder--file-structure)
+  - [Screenshots](#screenshots)
 
 ### Project Overview
 

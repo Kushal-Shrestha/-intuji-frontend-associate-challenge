@@ -45,11 +45,9 @@ root-folder/
 ├── js/
 │   ├── chart.js               # JavaScript controlling the chart
 │   ├── saving-plan.js         # JavaScript controlling the saving plan data
-│   └── side-bar.js            # JavaScript for sidebar toggles, etc.
+│   └── side-bar.js            # JavaScript for sidebar toggles,
 │
 ├── assets/
 │   ├── icons/                 # Icons used in the page
 │   └── images/                # Any images if needed
-│
-└── script.js                  # Main script file
 ```

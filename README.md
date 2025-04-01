@@ -55,14 +55,5 @@ root-folder/
 
 Desktop Size:
 
-To include a video in your markdown, you can use the following syntax:
+![](https://holocron.so/uploads/c40291e0-image.png)
 
-```markdown
-![Video Name](path/to/local/video.mp4)
-```
-
-```markdown
-[![Video Title](http://img.youtube.com/vi/VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO_ID)
-```
-
-Replace `VIDEO_ID` with the actual ID of the video you want to embed.

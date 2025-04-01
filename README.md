@@ -2,8 +2,6 @@
 \
 This repository contains my submission for the Intuji Associate Software Engineer (Frontend) assignment
 
-## 
-
 ## Table of Contents
 
 - 

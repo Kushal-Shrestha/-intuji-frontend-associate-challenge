@@ -50,3 +50,13 @@ root-folder/
 │   ├── icons/                 # Icons used in the page
 │   └── images/                # Any images if needed
 ```
+
+### Screenshots
+
+To include a video in your markdown, you can use the following syntax:
+
+```markdown
+[![Video Title](http://img.youtube.com/vi/VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO_ID)
+```
+
+Replace `VIDEO_ID` with the actual ID of the video you want to embed.

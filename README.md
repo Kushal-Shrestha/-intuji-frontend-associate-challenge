@@ -14,4 +14,4 @@ This repository contains my submission for the Intuji Associate Software Enginee
 
 ### Project Overview
 
-This project implements the "Dashboar
+This project implements the "FInance Dashboard" design from the provided Figma file to a responsive HTML/CSS and Javascript webpage. It

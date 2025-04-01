@@ -24,3 +24,53 @@ This project implements the "FInance Dashboard" design from the provided Figma f
   - Navigate to the root folder where the `index.html` file resides.
 
   - Double-click `index.html` or open it in your browser of choice.
+
+### Folder/File Structure
+
+root-folder/
+
+│
+
+├── index.html                 # Main HTML file with the dashboard layout
+
+├── styles.css                 # Global CSS importing other CSS files
+
+├── [README.md](http://README.md)                  # Documentation (this file)
+
+│
+
+├── css/
+
+│   ├── navbar.css             # Styles for the sidebar and navigation
+
+│   ├── header.css             # Styles for the top header and search bar
+
+│   ├── main-overview.css      # Styles for the 'Overview' cards
+
+│   ├── chart.css              # Styles for the analytics chart section
+
+│   ├── saving-plan.css        # Styles for the 'Saving Plan' aside
+
+│   └── recent-transactions.css # Styles for the 'Recent Transactions' aside
+
+│
+
+├── js/
+
+│   ├── chart.js               # JavaScript controlling the chart
+
+│   ├── saving-plan.js         # JavaScript controlling the saving plan data
+
+│   └── side-bar.js            # JavaScript for sidebar toggles, etc.
+
+│
+
+├── assets/
+
+│   ├── icons/                 # Icons used in the page
+
+│   └── images/                # Any images if needed
+
+│
+
+└── script.js                  # Main script file

@@ -72,6 +72,7 @@ Mobile Screens (With Nav):
    - **Analytics Chart**: Subtle transitions when rendering chart data or toggling between timeframes.
    - **Search Bar**: Animated focus effect that changes background positioning.
    - **Savings Plan**: Smooth progress bar transitions show savings progress in a visually engaging way.
+   - **Mobile Nav Animation**: Smooth animation on mobile nav open and close state. 
 3. Folder Organizations
    - Separated CSS files for each major component (navbar, header, overview cards, etc.).
    - Dedicated JavaScript files for different functionalities (chart logic, saving plan data, sidebar toggles).

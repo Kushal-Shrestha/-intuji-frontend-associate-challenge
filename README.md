@@ -8,7 +8,7 @@ This repository contains my submission for the Intuji Associate Software Enginee
   - [Project Overview](#project-overview)
   - [Assignment Requirements](#assignment-requirements)
   - [How to Run](#how-to-run)
-  - [Folder / File Structure](#folder--file-structure)
+    - [Folder / File Structure](#folder--file-structure)
   - [Screenshots](#screenshots)
 
 ### Project Overview
@@ -60,4 +60,7 @@ Desktop Size:
 Mobile Screens (With Nav):
 
 ![](https://holocron.so/uploads/68e0ca7e-image.png)
+
+
+![](https://holocron.so/uploads/83c115f2-image.png)
 

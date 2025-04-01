@@ -64,3 +64,10 @@ Mobile Screens (With Nav):
 
 ![](https://holocron.so/uploads/83c115f2-image.png)
 
+### Features and Notable Points
+
+1. Responsive Layout 
+   - Utilizes CSS media que
+2. 
+   - 
+3. Animations

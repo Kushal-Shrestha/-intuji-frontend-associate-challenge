@@ -1,15 +1,15 @@
-# -intuji-frontend-associate-challenge\
+# -intuji-frontend-associate-challenge\\
+
 \
 This repository contains my submission for the Intuji Associate Software Engineer (Frontend) assignment
 
 ## Table of Contents
 
-- 
-  - [Project Overview](#project-overview)
+- [Project Overview](#project-overview)
   - [How to Run](#how-to-run)
   - [Folder / File Structure](#folder--file-structure)
   - [Screenshots](#screenshots)
-  - Features and Notable Points
+  - [Features and Notable Points](#features-and-notable-points)
 
 ### Project Overview
 
@@ -61,18 +61,17 @@ Mobile Screens (With Nav):
 
 ![](https://holocron.so/uploads/68e0ca7e-image.png)
 
-
 ![](https://holocron.so/uploads/83c115f2-image.png)
 
 ### Features and Notable Points
 
-1. Responsive Layout 
+1. Responsive Layout
    - Utilizes CSS media queries to adapt desktop and mobile viewports
 2. Animations
    - **Analytics Chart**: Subtle transitions when rendering chart data or toggling between timeframes.
    - **Search Bar**: Animated focus effect that changes background positioning.
    - **Savings Plan**: Smooth progress bar transitions show savings progress in a visually engaging way.
-   - **Mobile Nav Animation**: Smooth animation on mobile nav open and close state. 
+   - **Mobile Nav Animation**: Smooth animation on mobile nav open and close state.
 3. Folder Organizations
    - Separated CSS files for each major component (navbar, header, overview cards, etc.).
    - Dedicated JavaScript files for different functionalities (chart logic, saving plan data, sidebar toggles).

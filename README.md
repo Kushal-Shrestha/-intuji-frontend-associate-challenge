@@ -6,10 +6,10 @@ This repository contains my submission for the Intuji Associate Software Enginee
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-  - [How to Run](#how-to-run)
-  - [Folder / File Structure](#folder--file-structure)
-  - [Screenshots](#screenshots)
-  - [Features and Notable Points](#features-and-notable-points)
+- [How to Run](#how-to-run)
+- [Folder / File Structure](#folder--file-structure)
+- [Screenshots](#screenshots)
+- [Features and Notable Points](#features-and-notable-points)
 
 ### Project Overview
 
